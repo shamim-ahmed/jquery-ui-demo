@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.20.custom.css"/>
   <script>
     $(document).ready(function() {
-      $("div#tabContent").tabs().tabs("add", "#tab4", "Tab 4");
+      $("div#tabContent").tabs({fx: {opacity:'toggle'}}).tabs("add", "#tab4", "Tab 4");
       $("div#tab4").text("This is the content of the fourth tab");
     });
   </script>
