@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Tab demo</title>
+  <script src="js/jquery-1.7.2.min.js"></script>
+  <script src="js/jquery-ui-1.8.20.custom.min.js"></script>
+  <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.20.custom.css"/>
+  <script>
+    $(document).ready(function() {
+      $("div#tabContent").tabs().tabs("add", "#tab4", "Tab 4");
+      $("div#tab4").text("This is the content of the fourth tab");
+    });
+  </script>
+</head>
+<body>
+  <h1>Tab demo</h1>
+
+  <div id="tabContent" style="width:30%">
+    <ul>
+      <li><a href="#tab1">Tab 1</a></li>
+      <li><a href="#tab2">Tab 2</a></li>
+      <li><a href="#tab3">Tab 3</a></li>
+    </ul>
+
+    <div id="tab1">This is the content for first tab</div>
+    <div id="tab2">This is the content for second tab</div>
+    <div id="tab3">This is the content for third tab</div>
+  </div>
+</body>
+</html>
